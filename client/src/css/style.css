@@ -235,14 +235,14 @@ a:hover{
 }
 .epk-stage{
 	width:100%;
-	height:100vh;
+
 	background-image: url(../img/main_bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	top:0;
-	position: absolute;
+	position: relative;
 	overflow-x: hidden;
 }
 
@@ -288,6 +288,11 @@ a:hover{
 	line-height: 18pt;
 	letter-spacing: normal;
 	text-transform: none;
+
+}
+.youtube-container{
+  height:100vh;
+  width:100%;
 }
 .social-icons i{
 	font-size: 12pt !important;

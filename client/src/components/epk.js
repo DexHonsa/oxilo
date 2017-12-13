@@ -1,12 +1,24 @@
 import React from 'react';
 import me from '../img/me.png';
+import Youtube from 'react-youtube';
 
 class EPK extends React.Component {
   render(){
+    const opts = {
+      height: '100%',
+      width: '100%',
+      setPlaybackQuality:'hd1080',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
     return(
-
-
+<div>
+    <div className="youtube-container">
+      <Youtube opts={opts} videoId="AMgrWRpfmAo"/>
+</div>
       <div className="epk-stage">
+
   <img src={me} style={{position: 'absolute', right: '20%', top: 120}} alt />
   <div className="basic-details">
     <div className="main-title">
@@ -19,6 +31,7 @@ class EPK extends React.Component {
       </div>
       <hr style={{width: '100%', borderColor: '#fff'}} />
       Oxilo<br /><hr style={{width: '100%', borderColor: '#fff'}} />
+
       <div className="details">
         <span>OXILO:</span> Dex Honsa<br />
         <span>Email:</span> oxilomusic@gmail.com<br />
@@ -55,6 +68,7 @@ class EPK extends React.Component {
             <li>The Date Shed, Coachella, CA</li>
             <li>The Hood, Palm Desert, CA</li>
             <li>Vestal Village, Indio, CA</li>
+            <li>Zeldas Nightclub, Palm Springs, CA</li>
           </ul>
         </div>
         <div className="col-sm-6">
@@ -65,109 +79,133 @@ class EPK extends React.Component {
       <div className="row" style={{marginTop: 50}}>
         <div className="col-sm-12">
           <div className="title-1">discography</div>
-          <div className="discography-item">
+          <a href="https://soundcloud.com/tropixremixes/nopromises"><div className="discography-item">
             <div className="disco-number">1.</div>
             <div className="disco-title">Cheat Codes feat. Demi Lovato - No Promises (Tropix Remix)<br />
               <div className="disco-details">
                 Released Aug 06 2017 <i className="fa fa-play" /> 321K <i className="fa fa-heart" /> 10.2K <i className="fa fa-retweet" /> 1,804
               </div>
             </div>
-          </div>
-          <div className="discography-item">
+          </div></a>
+          <a href="https://soundcloud.com/tropixremixes/mytype"><div className="discography-item">
             <div className="disco-number">2.</div>
             <div className="disco-title">The Chainsmokers - My Type (Tropix Remix)<br />
               <div className="disco-details">
                 Released: Aug 30 2017 <i className="fa fa-play" /> 309K <i className="fa fa-heart" /> 11.3K <i className="fa fa-retweet" /> 1,908
               </div>
             </div>
-          </div>
-          <div className="discography-item">
+          </div></a>
+          <a href="https://soundcloud.com/tropixremixes/outoflove"><div className="discography-item">
             <div className="disco-number">3.</div>
             <div className="disco-title">Two Friends - Out of Love (Tropix &amp; Oxilo Remix)<br />
               <div className="disco-details">
                 Released July 07 2017 <i className="fa fa-play" /> 252K <i className="fa fa-heart" /> 9,023 <i className="fa fa-retweet" /> 1,954
               </div>
             </div>
-          </div>
-          <div className="discography-item">
+          </div></a>
+          <a href="https://soundcloud.com/tropixremixes/chicago"><div className="discography-item">
             <div className="disco-number">4.</div>
             <div className="disco-title">Win &amp; woo X Bryan Fox - Chicago (tropix remix)<br />
               <div className="disco-details">
                 Released Sept 09 2017 <i className="fa fa-play" /> 230K <i className="fa fa-heart" /> 9,819 <i className="fa fa-retweet" /> 2,144
               </div>
             </div>
-          </div>
-          <div className="discography-item">
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/gryffin-illenium-feel-good-ft-daya-oxilo-remix"><div className="discography-item">
             <div className="disco-number">5.</div>
             <div className="disco-title">Gryffin &amp; Illenium - Feel Good ft. Daya (OXilo Remix)<br />
               <div className="disco-details">
-                Released Apr 22 2017 <i className="fa fa-play" /> 174K <i className="fa fa-heart" /> 7,630 <i className="fa fa-retweet" /> 2,450
+                Released Apr 22 2017 <i className="fa fa-play" /> 184K <i className="fa fa-heart" /> 7,630 <i className="fa fa-retweet" /> 2,450
               </div>
             </div>
-          </div>
-          <div className="discography-item">
+          </div></a>
+          <a href="https://soundcloud.com/tropixremixes/thereforyou"><div className="discography-item">
             <div className="disco-number">6.</div>
+            <div className="disco-title">TELYKast - There For You (Tropix Remix)<br />
+              <div className="disco-details">
+                Released Mar 04 2017 <i className="fa fa-play" /> 160K <i className="fa fa-heart" /> 5,458 <i className="fa fa-retweet" /> 1,325
+              </div>
+            </div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/zedd-alessia-cara-stay-oxilo-remix"><div className="discography-item">
+            <div className="disco-number">7.</div>
             <div className="disco-title">Zedd, Alessia Cara - Stay (oxilo Remix)<br />
               <div className="disco-details">
-                Released Mar 04 2017 <i className="fa fa-play" /> 150K <i className="fa fa-heart" /> 3,547 <i className="fa fa-retweet" /> 1,038
+                Released Mar 04 2017 <i className="fa fa-play" /> 155K <i className="fa fa-heart" /> 3,547 <i className="fa fa-retweet" /> 1,038
               </div>
             </div>
-          </div>
-          <div className="discography-item">
-            <div className="disco-number">7.</div>
+          </div></a>
+          <a href="https://soundcloud.com/tropixofficial/sets/goodthing"><div className="discography-item">
+            <div className="disco-number">8.</div>
+            <div className="disco-title">Tritonal feat. Laurell - Good Thing (Tropix Remix)<br />
+              <div className="disco-details">
+                Released Nov 30 2017 <i className="fa fa-play" /> 114K <i className="fa fa-heart" /> 3,365 <i className="fa fa-retweet" /> 801
+              </div>
+            </div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/teflon-sega-press-play-and-escape-oxilo-remix"><div className="discography-item">
+            <div className="disco-number">9.</div>
             <div className="disco-title">Teflon Sega - Press play &amp; Escape (Oxilo Remix)<br />
               <div className="disco-details">
-                Released Aug 30 2017 <i className="fa fa-play" /> 108K <i className="fa fa-heart" /> 3,965 <i className="fa fa-retweet" /> 990
+                Released Aug 30 2017 <i className="fa fa-play" /> 111K <i className="fa fa-heart" /> 3,965 <i className="fa fa-retweet" /> 990
               </div>
             </div>
-          </div>
-          <div className="discography-item">
-            <div className="disco-number">8.</div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/oxilo-time-well-wasted"><div className="discography-item">
+            <div className="disco-number">10.</div>
             <div className="disco-title">Oxilo - Time Well Wasted<br />
               <div className="disco-details">
-                Released Oct 06 2016 <i className="fa fa-play" /> 69K <i className="fa fa-heart" /> 4,113 <i className="fa fa-retweet" /> 1,296
+                Released Oct 06 2016 <i className="fa fa-play" /> 72K <i className="fa fa-heart" /> 4,113 <i className="fa fa-retweet" /> 1,296
               </div>
             </div>
-          </div>
-          <div className="discography-item">
-            <div className="disco-number">9.</div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/wait-it-out"><div className="discography-item">
+            <div className="disco-number">11.</div>
+            <div className="disco-title">Oxilo - Wait it Out<br />
+              <div className="disco-details">
+                Released Nov 05 2017 <i className="fa fa-play" /> 44.1K <i className="fa fa-heart" /> 2,125 <i className="fa fa-retweet" /> 1,297
+              </div>
+            </div>
+          </div></a>
+          <a href="https://soundcloud.com/tropixremixes/nopromises"><div className="discography-item">
+            <div className="disco-number">12.</div>
             <div className="disco-title">Justin Bieber - Love yourself (oxilo Remix)<br />
               <div className="disco-details">
-                Released Oct 05 2016 <i className="fa fa-play" /> 44.4K <i className="fa fa-heart" /> 2,309 <i className="fa fa-retweet" /> 1,297t
+                Released Oct 05 2016 <i className="fa fa-play" /> 44.4K <i className="fa fa-heart" /> 2,309 <i className="fa fa-retweet" /> 1,297
               </div>
             </div>
-          </div>
-          <div className="discography-item">
-            <div className="disco-number">10.</div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/xuitcasecity-need-somebody-oxilo-remix"><div className="discography-item">
+            <div className="disco-number">13.</div>
             <div className="disco-title">XUITCaseCity - Need somebody (oxilo remix)<br />
               <div className="disco-details">
                 Released Oct 10 2017 <i className="fa fa-play" /> 46.3K <i className="fa fa-heart" /> 2,039 <i className="fa fa-retweet" /> 550
               </div>
             </div>
-          </div>
-          <div className="discography-item">
-            <div className="disco-number">11.</div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/kaivon-feel-ft-danel-oxilo-remix"><div className="discography-item">
+            <div className="disco-number">14.</div>
             <div className="disco-title">Kaivon - Feel ft. Danel (oxilo Remix)<br />
               <div className="disco-details">
                 Released Jun 05 2017 <i className="fa fa-play" /> 43.1K <i className="fa fa-heart" /> 2,173 <i className="fa fa-retweet" /> 643
               </div>
             </div>
-          </div>
-          <div className="discography-item">
-            <div className="disco-number">12.</div>
+          </div></a>
+          <a href="https://soundcloud.com/oxilo/lincoln-jesser-ft-yuna-baby-boy-oxilo-remix"><div className="discography-item">
+            <div className="disco-number">15.</div>
             <div className="disco-title">Lincoln Jesser - baby boy ft yuna (oxilo remix)<br />
               <div className="disco-details">
-                Released Jan 17 2017 <i className="fa fa-play" /> 23.9K <i className="fa fa-heart" /> 1,146 <i className="fa fa-retweet" /> 465
+                Released Jan 17 2017 <i className="fa fa-play" /> 24.9K <i className="fa fa-heart" /> 1,146 <i className="fa fa-retweet" /> 465
               </div>
             </div>
-          </div>
+          </div></a>
         </div>
       </div>
       <div style={{height: 300}} />
     </div>
   </div>
 </div>
-
+</div>
 
     );
   }
