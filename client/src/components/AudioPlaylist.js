@@ -10,11 +10,13 @@ import feel_good_art from '../img/feelgood.jpg';
 import time_art from '../img/timeWellWasted.jpg';
 import teflon_art from '../img/teflon3.jpg';
 import need_art from '../img/XuitcaseCity_need_somebody.jpg';
+import wait_art from '../img/wait_it_out_art.jpg';
 
 import teflon_music from '../music/teflon.mp3';
 import feel_good_music from '../music/feel_good.mp3';
 import time_music from '../music/time.mp3';
 import need_music from '../music/need.mp3';
+import wait_music from '../music/wait.mp3';
 
 
 
@@ -79,6 +81,16 @@ const jPlaylistOptions = {
   hidePlaylist: true,
   playlist: [
     {
+      title: 'Wait It Out',
+      artist: 'Oxilo',
+      sources: {
+        mp3: wait_music
+
+      },
+      poster:wait_art,
+      free: true,
+    },
+    {
       title: 'XUITCASECITY - Need Somebody (OXILO Remix)',
       artist: 'Oxilo',
       sources: {
@@ -88,6 +100,7 @@ const jPlaylistOptions = {
       poster:need_art,
       free: true,
     },
+
     {
       title: 'Teflon Sega - Press Play and Escape (OXILO Remix)',
       artist: 'Oxilo',
